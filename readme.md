@@ -6,6 +6,7 @@ A rough setup guide might go like follows:
 1. Run dockerfile image
 
 2. Mount bind volumes for SDKs and for code output folder
+
 docker container run -d -it --name SenchaCmd --mount type=bind,source="C:\\sencha\sdks",target="/sdk" --mount type=bind,source="C:\\coding\cmd_output_folder",target="/code" sencha-cmd-openjdk-8-jre-alpine
 
 3. Create free sencha account and login to NPM from within the container
